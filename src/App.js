@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import MadLibs from './madlibs/MadLibs.js';
+import madlibs from './data/madlibs.json';
 import Story from './components/Story.js';
 
 class App extends Component {
@@ -8,9 +8,10 @@ class App extends Component {
     super();
 
     this.state = {
-      selectedMadLib: MadLibs[0]
+      selectedMadLib: madlibs[0],
     };
   }
+
   render() {
     return (
       <section className="App">
