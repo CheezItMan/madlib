@@ -9,6 +9,11 @@ class App extends Component {
 
     this.state = {
       selectedMadLib: madlibs[0],
+      substitutions: {
+        adjective_1: "unruly",
+        noun_1: "courage",
+        noun_2: "exhaust"
+      }
     };
   }
 
@@ -20,7 +25,7 @@ class App extends Component {
         {/*
           Render your form with input values
         */}
-        <Story text={ this.state.selectedMadLib.getText() } />
+        <Story madLib={this.state.selectedMadLib} substitutions={this.state.substitutions} />
       </section>
     );
   }
