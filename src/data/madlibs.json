@@ -1,0 +1,6 @@
+[
+  {
+    "text": "A vacation is when you take a trip to some ${adjective_1} place with your ${adjective_2} family or friends.\\nUsually you go to some place that is near a/an ${noun_1} or up a/an ${noun_2}.",
+    "keys": ["adjective_1", "adjective_2", "noun_1", "noun_2"]
+  }
+]
